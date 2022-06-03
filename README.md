@@ -1,29 +1,24 @@
-# ToDo_App
+# Todo App
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
-
+1. Download Project Locally
+```sh
+git clone <code https>
+```
+2. Install Dependencies
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Run Vue Application
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### How to run in browser
 
-```sh
-npm run build
-```
+Copy localhost from terminal into browser to view app.
+
+![todo pic](/src/todoPic.png)
