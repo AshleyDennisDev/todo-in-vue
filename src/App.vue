@@ -25,8 +25,10 @@ export default{
   max-width: 60rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+
 }
 @media screen and (min-width: 550px) {
   #app {
