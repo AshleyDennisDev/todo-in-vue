@@ -9,7 +9,7 @@ export default{
 </script>
 
 <template>
-<h1>My To Dos</h1>
+<h1>Daily To Dos</h1>
 <TaskListVue />
 </template>
 
