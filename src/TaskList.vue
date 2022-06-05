@@ -34,11 +34,11 @@ export default {
     <input class="form" v-model="newTodo" />
     <button class="add-btn">Add Todo</button>
   </form>
-      <div class="list-group">
-          <div v-for="todo in todos" :key="todo.id">
+  <div class="list-group">
+    <div v-for="todo in todos" :key="todo.id">
       <input class="checkbox" type="checkbox" v-model="todo.done" />
       <span v-if="!todo.editing" :class="{ done: todo.done }">{{
-          todo.text
+        todo.text
       }}</span>
       <input
         class="form-2"
@@ -51,9 +51,9 @@ export default {
           {{ !todo.editing ? "Edit" : "Update" }}
         </button>
         <button class="delete-btn" @click="deleteTodo(todo)">Delete</button>
-        </div>
       </div>
     </div>
+  </div>
 </template>
 
 <style>
@@ -61,8 +61,8 @@ export default {
   font-size: 2rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -72,7 +72,7 @@ export default {
   border: 0.25rem solid rgb(152, 151, 151);
   margin-top: 5rem;
   margin-right: 2rem;
-  display: inline;
+  display: inline-flex;
   justify-content: center;
 }
 .form-2 {
@@ -84,35 +84,39 @@ export default {
 }
 .add-btn {
   font-size: 2rem;
-  background-color: bisque;
+  background-color: rgb(250, 241, 229);
+  border-radius: 1.5rem;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 .edit-update-btn {
   font-size: 2rem;
   margin-right: 1rem;
   margin-left: 4rem;
-  color: bisque;
+  color: rgb(250, 241, 229);
   background-color: rgb(61, 58, 58);
-
+  border-radius: 1.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .delete-btn {
   font-size: 2rem;
   margin-right: 1rem;
   margin-left: 1rem;
-  color: bisque;
+  color: rgb(250, 241, 229);
   background-color: rgb(61, 58, 58);
+  border-radius: 1.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.btn-group{
- display: inline-flex;
- margin-bottom: 1rem;
-}
-.list {
-  list-style: none;
-  font-size: 2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.btn-group {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  float:right;
 }
 .checkbox {
-  border-radius: 4rem;
+  height: 20px;
+  width: 25px;
 }
 .done {
   text-decoration: line-through;
