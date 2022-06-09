@@ -75,6 +75,7 @@ export default {
   display: inline-flex;
   justify-content: center;
 }
+
 .form-2 {
   display: inline;
   font-size: 2rem;

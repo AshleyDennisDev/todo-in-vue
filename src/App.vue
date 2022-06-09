@@ -20,7 +20,7 @@ h1 {
 }
 #app {
   background: rgb(249, 200, 165);
-  margin: 4rem 8rem 4rem 8rem;
+  margin: 4rem 20px;
   padding: 1rem;
   padding-top: 0;
   box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.2),
@@ -31,6 +31,7 @@ h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
   color: rgb(61, 58, 58);
 }
+
 @media screen and (min-width: 550px) {
   #app {
     padding: 4rem;
